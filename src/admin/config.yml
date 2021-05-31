@@ -2,11 +2,11 @@ backend:
   name: git-gateway # required for using Github
   branch: main # the default branch you want CMS changes merged to
   commit_messages: # Optional: configure the commit messages Netlify CMS will use when publishing changes
-    create: "feat({{collection}}): :sparkles: Create {{slug}}"
-    update: "chore({{collection}}): :recycle: Update {{slug}}"
-    delete: "chore({{collection}}): :recycle: Delete {{slug}}"
-    uploadMedia: "feat(assets): :bento: Upload {{path}}"
-    deleteMedia: "chore(assets): :wastebasket: Delete {{path}}"
+    create: "feat({{collection}}): Create {{slug}}"
+    update: "chore({{collection}}): Update {{slug}}"
+    delete: "chore({{collection}}): Delete {{slug}}"
+    uploadMedia: "feat(assets): Upload {{path}}"
+    deleteMedia: "chore(assets): Delete {{path}}"
 
 local_backend: true # Enable the CMS locally
 
