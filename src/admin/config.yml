@@ -38,6 +38,14 @@ collections:
         fields:
           - { label: Layout, name: layout, widget: hidden, default: home }
           - { label: Body, name: body, widget: markdown }
+      - label: Blog Page
+        name: blog
+        file: src/blog.md
+        fields:
+          - { label: Layout, name: layout, widget: hidden, default: page }
+          - { label: Title, name: title, widget: hidden, default: Blog }
+          - { label: Permalink, name: permalink, widget: string, default: '/blog/' }
+          - { label: Body, name: body, widget: markdown }
       - label: Portfolio Page
         name: portfolio
         file: src/portfolio.md
