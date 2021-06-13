@@ -69,6 +69,7 @@ module.exports = {
               url: url => !url.startsWith('/')
             }
           },
+          "postcss-loader",
           {
             loader: "sass-loader",
             options: {
