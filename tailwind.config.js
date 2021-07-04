@@ -10,8 +10,15 @@ module.exports = {
   theme: {
     extend: {},
     textColor: {
+      'muns-black': '#040303',
       'muns-purple': '#68479b',
-    }
+    },
+    fontFamily: {
+      'muns-sans': ['ff-tisa-sans-web-pro', 'sans-serif'],
+    },
+    backgroundColor: theme => ({
+      'muns-gray-100': '#fcf9f9',
+    })
   },
   variants: {
     extend: {},
