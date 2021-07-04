@@ -9,6 +9,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
+    textColor: {
+      'muns-purple': '#68479b',
+    }
   },
   variants: {
     extend: {},
