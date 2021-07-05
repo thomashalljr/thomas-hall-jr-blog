@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {},
     textColor: {
-      'muns-black': '#040303',
+      'muns-black': '#050505',
       'muns-purple': '#68479b',
     },
     fontFamily: {
