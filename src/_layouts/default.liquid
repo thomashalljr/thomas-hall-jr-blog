@@ -4,11 +4,11 @@
     {% render "head", metadata: site.metadata, title: page.title %}
   </head>
   <body class="antialiased bg-muns-gray-100 font-muns-sans text-muns-black">
-    <header class="px-4 py-2.5 border-b border-gray-400 border-opacity-90">
+    <header class="px-4 py-2.5 bg-muns-ruby">
       {% render "navbar", metadata: site.metadata, page: page %}
     </header>
 
-    <main class="px-4">
+    <main class="mx-4">
       <div class="mx-auto max-w-2xl">
         {{ content }}
       </div>

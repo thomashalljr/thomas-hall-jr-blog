@@ -1,8 +1,19 @@
-a {
-  @apply text-muns-purple;
+h1 {
+  @apply my-7 text-3xl font-bold;
 }
 
 p {
+  @apply my-4;
   font-size: 1.25rem;
   line-height: 1.8;
+}
+
+a {
+  @apply text-muns-ruby no-underline;
+}
+
+header {
+  a {
+    @apply text-base text-white font-semibold;
+  }
 }
