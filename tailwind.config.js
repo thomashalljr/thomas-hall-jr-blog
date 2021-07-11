@@ -1,5 +1,3 @@
-const munsRubyColor = '#980905'
-
 module.exports = {
   purge: {
     mode: 'production',
@@ -10,10 +8,13 @@ module.exports = {
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'muns-ruby': '#980905',
+      }
+    },
     textColor: theme => ({
       ...theme('colors'),
-      'muns-ruby': munsRubyColor,
       'muns-black': '#050505',
     }),
     fontFamily: {
@@ -21,7 +22,6 @@ module.exports = {
     },
     backgroundColor: theme => ({
       ...theme('colors'),
-      'muns-ruby': munsRubyColor,
       'muns-gray-100': '#fcf9f9',
     })
   },
