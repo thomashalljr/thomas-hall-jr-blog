@@ -1,7 +1,15 @@
-<nav class="mx-auto max-w-2xl flex gap-10">
+<nav class="mx-auto max-w-2xl whitespace-nowrap flex gap-10 justify-between sm:justify-start">
   <a href="/">{{ "thomas hall jr" | upcase }}</a>
-  <a href="/blog">blog</a>
-  <a href="/portfolio">portfolio</a>
-  <a href="https://drive.google.com/open?id=1JP8k619YpRHOSWOhgH5nq1-8cE2iq4IOuZ1VOOdPUZ0" target="_blank">resume</a>
-  <a href="mailto:{{ metadata.email }}">contact me</a>
+
+  <div class="grid grid-cols-1 justify-items-end">
+    <label for="navbar-toggle" class="h-6 block cursor-pointer text-lg text-white sm:hidden"><i class="fas fa-bars"></i></label>
+    <input id="navbar-toggle" class="hidden" type="checkbox" />
+
+    <div id="navbar" class="hidden text-right sm:flex sm:gap-10">
+      <a href="/blog">blog</a>
+      <a href="/portfolio">portfolio</a>
+      <a href="https://drive.google.com/open?id=1JP8k619YpRHOSWOhgH5nq1-8cE2iq4IOuZ1VOOdPUZ0" target="_blank">resume</a>
+      <a href="mailto:{{ metadata.email }}">contact me</a>
+    </div>
+  </div>
 </nav>
