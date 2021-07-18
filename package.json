@@ -30,7 +30,7 @@
     "postcss-loader": "^4",
     "sass": "^1.35.2",
     "sass-loader": "^8.0.2",
-    "tailwindcss": "^2.1.4",
+    "tailwindcss": "^2.2.4",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.11",
     "webpack-manifest-plugin": "^2.1.0"
