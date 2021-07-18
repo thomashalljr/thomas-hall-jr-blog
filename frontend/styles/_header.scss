@@ -1,0 +1,13 @@
+@use "breakpoints";
+
+header {
+  a {
+    @apply text-base text-white font-semibold;
+  }
+}
+
+@media (max-width: breakpoints.$up-to-sm) {
+  #navbar-toggle:checked + #navbar {
+    @apply mt-3 grid gap-3.5;
+  }
+}
