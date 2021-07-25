@@ -4,8 +4,22 @@ title: Portfolio
 permalink: /portfolio/
 ---
 
-This is the basic Bridgetown site template. You can find out more info about customizing your Bridgetown site, as well as basic Bridgetown usage documentation at [bridgetownrb.com](https://bridgetownrb.com/)
+<div class="grid gap-6 md:grid-cols-2">
 
-You can find the source code for Bridgetown at GitHub:
-[bridgetownrb](https://github.com/bridgetownrb) /
-[bridgetown](https://github.com/bridgetownrb/bridgetown)
+  {% rendercontent "portfolio/card", url: "https://enjoymyrecipes.herokuapp.com/", image: "myrecipes-screenshot.jpg" %}
+    MyRecipes: Ruby on Rails app
+  {% endrendercontent %}
+
+  {% rendercontent "portfolio/card", url: "https://enjoymymusic.herokuapp.com/", image: "mymusic-screenshot.jpg" %}
+    MyMusic: JavaScript app
+  {% endrendercontent %}
+
+  {% rendercontent "portfolio/card", url: "https://tomodorotimer.herokuapp.com/", image: "tomodoro-timer-screenshot.jpg" %}
+    Tomodoro Timer: React app
+  {% endrendercontent %}
+
+  {% rendercontent "portfolio/card", url: "https://github.com/thomashalljr", image: "github-logo.jpg" %}
+    Check out my profile on GitHub!
+  {% endrendercontent %}
+
+</div>
