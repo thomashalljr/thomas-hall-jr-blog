@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Your First Post on Bridgetown"
 date:   2021-03-27 20:20:32 -0400
 category: blog
