@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   purge: {
     mode: 'production',
@@ -23,7 +25,11 @@ module.exports = {
     backgroundColor: theme => ({
       ...theme('colors'),
       'muns-gray-100': '#fcf9f9',
-    })
+    }),
+    screens: {
+      'up-to-sm': {'max': '639px'},
+      ...defaultTheme.screens,
+    }
   },
   variants: {
     extend: {},
