@@ -1,16 +1,16 @@
 <!doctype html>
 <html lang="en">
   <head>
-    {% render "head", metadata: site.metadata, title: page.title %}
+    <%= render "head", metadata: site.metadata, title: resource.data.title %>
   </head>
   <body class="antialiased bg-muns-gray-100 font-muns-sans text-muns-black">
     <header class="px-4 py-2.5 bg-muns-ruby">
-      {% render "navbar", metadata: site.metadata, page: page %}
+      <%= render "navbar", metadata: site.metadata, page: page %>
     </header>
 
     <main class="mx-4 mb-4">
       <div class="mx-auto max-w-2xl">
-        {{ content }}
+        <%= content %>
       </div>
     </main>
   </body>
