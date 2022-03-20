@@ -4,8 +4,8 @@ module.exports = {
   purge: {
     mode: 'production',
     content: [
-      './src/**/*.md',
-      './src/**/*.liquid',
+      './src/**/*.{rb,erb,html,md,liquid}',
+      './frontend/javascript/**/*.js'
     ],
   },
   darkMode: false, // or 'media' or 'class'
