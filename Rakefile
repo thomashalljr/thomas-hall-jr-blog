@@ -32,18 +32,17 @@ namespace :frontend do
 
   desc "Watch the frontend with Webpack during development"
   task :dev do
+    Rake::Task['netlify:cms_proxy_server:run'].execute
     sh "yarn run webpack-dev --color"
   rescue Interrupt
   end
 end
 
-#
-# Add your own Rake tasks here! You can use `environment` as a prerequisite
-# in order to write automations or other commands requiring a loaded site.
-#
-# task :my_task => :environment do
-#   puts site.root_dir
-#   automation do
-#     say_status :rake, "I'm a Rake tast =) #{site.config.url}"
-#   end
-# end
+namespace :netlify do
+  namespace :cms_proxy_server do
+    desc 'Run Netlify CMS Proxy Server'
+    task :run do
+      sh 'yarn netlify-cms-proxy-server'
+    end
+  end
+end
