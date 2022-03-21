@@ -2,7 +2,6 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   purge: {
-    mode: 'production',
     content: [
       './src/**/*.{rb,erb,html,md,liquid}',
       './frontend/javascript/**/*.js'
