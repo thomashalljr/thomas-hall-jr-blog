@@ -1,5 +1,11 @@
-.portfolio--card {
-  p {
-    @apply text-base;
+.portfolio--card-component {
+  @apply border border-gray-400 rounded bg-white;
+
+  img {
+    @apply rounded;
+  }
+
+  .title {
+    @apply flex justify-center px-5 py-4;
   }
 }
