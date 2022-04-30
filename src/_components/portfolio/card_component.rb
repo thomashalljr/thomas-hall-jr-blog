@@ -1,5 +1,5 @@
 module Portfolio
-  class Card < ApplicationComponent
+  class CardComponent < ApplicationComponent
     def initialize(url:, image:)
       @url = url
       @image = image
