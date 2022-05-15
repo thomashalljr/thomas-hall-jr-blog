@@ -30,18 +30,9 @@ namespace :frontend do
     sh "yarn run esbuild"
   end
 
-  desc "Watch the frontend with esbuild during development"
+  desc 'Watch the frontend with esbuild during development, and connect Netlify CMS to local git repo'
   task :dev do
-    sh "yarn run esbuild-dev"
+    sh 'yarn run esbuild-dev & yarn netlify-cms-proxy-server'
   rescue Interrupt
-  end
-end
-
-namespace :netlify do
-  namespace :cms_proxy_server do
-    desc 'Run Netlify CMS Proxy Server'
-    task :run do
-      sh 'yarn netlify-cms-proxy-server'
-    end
   end
 end
