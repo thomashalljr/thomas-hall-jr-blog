@@ -32,7 +32,6 @@ namespace :frontend do
 
   desc "Watch the frontend with esbuild during development"
   task :dev do
-    Rake::Task['netlify:cms_proxy_server:run'].execute
     sh "yarn run esbuild-dev"
   rescue Interrupt
   end
