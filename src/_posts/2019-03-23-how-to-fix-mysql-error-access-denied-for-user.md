@@ -1,8 +1,7 @@
 ---
-title:  "How to fix MySQL error: Access denied for user"
+title: "How to fix MySQL error: Access denied for user"
 description: "Rails wasn't configured to connect to MySQL, and this sequence of events exposed the issue."
-date:   2019-03-23 20:39:59 -0400
-category: blog
+date: 2019-03-23 20:39:59 -0400
 ---
 
 Well, here it goes, my first blog post. Let's kick it off with a MySQL error.

@@ -1,8 +1,8 @@
 ---
-layout: post
 title: Reset git credentials on a Mac
 date: 2022-05-02T02:21:36.775Z
 ---
+
 I tried doing a git push to my HTTPS GitHub remote, but received this error:
 
 ```

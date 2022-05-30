@@ -21,12 +21,14 @@ url: "" # the base hostname & protocol for your site, e.g. https://example.com
 permalink: pretty
 content_engine: resource
 
+collections:
+  posts:
+    permalink: /blog/:slug/
+
 defaults:
-  -
-    scope:
+  - scope:
       path: "" # an empty string here means all files in the project
       type: "posts"
     values:
       layout: "post"
-
 # timezone: America/Los_Angeles
