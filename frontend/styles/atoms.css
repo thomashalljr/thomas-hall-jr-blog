@@ -11,3 +11,7 @@ p {
 a {
   @apply text-muns-ruby no-underline break-words;
 }
+
+pre {
+  @apply overflow-x-auto;
+}
