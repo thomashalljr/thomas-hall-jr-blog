@@ -4,7 +4,7 @@ title: Portfolio
 permalink: /portfolio/
 ---
 
-<div class="grid gap-6 md:grid-cols-2">
+<div class="not-prose grid gap-6 md:grid-cols-2">
   <%= render Portfolio::CardComponent.new(url: "https://enjoymyrecipes.herokuapp.com/", image: "myrecipes-screenshot.jpg") do %>
     MyRecipes: Ruby on Rails app
   <% end %>

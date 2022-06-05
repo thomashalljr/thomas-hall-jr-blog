@@ -1,6 +1,6 @@
 header {
   a {
-    @apply text-base text-white font-semibold;
+    @apply text-base text-white font-semibold no-underline;
   }
 }
 

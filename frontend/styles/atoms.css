@@ -3,15 +3,10 @@ h1 {
 }
 
 p {
-  @apply my-4;
   font-size: 1.25rem;
-  line-height: 1.8;
+  line-height: 1.8rem;
 }
 
 a {
   @apply text-muns-ruby no-underline break-words;
-}
-
-pre {
-  @apply overflow-x-auto;
 }
