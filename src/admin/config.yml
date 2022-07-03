@@ -23,7 +23,6 @@ collections:
     editor:
       preview: false # According to the documentation, this won't work with our setup, but I didn't try
     fields: # Fields for the collection
-      - { label: Layout, name: layout, widget: hidden, default: post }
       - { label: Title, name: title, widget: string }
       - { label: Publish Date, name: date, widget: datetime }
       - { label: Body, name: body, widget: markdown }
