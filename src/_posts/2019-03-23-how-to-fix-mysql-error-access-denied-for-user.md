@@ -12,7 +12,7 @@ Mysql2::Error: Access denied for user 'root'@'localhost' (using password: NO)
 
 The issue surfaced after creating the first model in a Ruby on Rails app and then trying to start rails server in development. It turns out config/database.yml wasn’t set up with the right MySQL credentials. After saving this file with the correct username and password, and then restarting rails server, my website didn’t receive the error anymore.
 
-Here are some related links for anyone with this kind of problem.
+Resources:
 
 [https://coderwall.com/p/vua9aa/access-denied-for-user-root-localhost-using-password-no-mysql2-error](https://coderwall.com/p/vua9aa/access-denied-for-user-root-localhost-using-password-no-mysql2-error)
 

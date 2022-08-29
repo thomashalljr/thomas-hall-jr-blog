@@ -22,7 +22,7 @@ Then, the next time you git push, you should be prompted for your GitHub usernam
 
 Instead, they accept personal access tokens over HTTPS. Here is a GitHub Docs article about [creating a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) to use as your password. After entering your personal access token as your password in the command line, the next git push should be good to go.
 
-References
+Resources:
 
 <https://docs.github.com/en/get-started/getting-started-with-git/updating-credentials-from-the-macos-keychain#deleting-your-credentials-via-the-command-line>
 
